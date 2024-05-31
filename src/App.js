@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Scoops from "./components/Scoops/Scoops";
+import Toppings from "./components/Toppings/Toppings";
+import Form from "./components/Form/Form";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="d-flex flex-column gap-5 bg-dark min-vh-100 text-light px-3 py-5">
+      <Scoops />
+      <Toppings />
+      <Form />
     </div>
   );
-}
+};
 
 export default App;
